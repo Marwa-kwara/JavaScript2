@@ -10,9 +10,13 @@
   4. Have the function execute when it 's loading in the browser
 
  */
+let h1 = document.createElement('h1');
+document.body.appendChild(h1);
 
 function displayCurrentTime() {
   // your code goes in here
+  let currentTime = new Date();
+  h1.innerHTML = currentTime.getHours() + ":" + currentTime.getMinutes() + ":" + currentTime.getSeconds();
 }
 
 setInterval(displayCurrentTime, 1000);
