@@ -14,6 +14,9 @@
 
 function takeOutLemons(basket) {
   // your code goes in here. The output is a string 
+  let lemonOUT = "Lemon";
+  let basketWithOutLemon = fruitBasket.filter(fruitBasket => fruitBasket !== lemonOUT);
+  return "My mom bought me a fruit basket, containing " + basketWithOutLemon
 }
 
 const fruitBasket = ['Apple', 'Lemon', 'Grapefruit', 'Lemon', 'Banana', 'Watermelon', 'Lemon'];
