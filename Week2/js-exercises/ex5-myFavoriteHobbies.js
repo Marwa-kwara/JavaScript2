@@ -8,14 +8,22 @@
  Put the list items in an unordered list
  */
 
-function createHTMLList(arr) {
-  // your code goes in here
-}
-
+ 
 const myHobbies = [
   'Meditation',
   'Reading',
   'Programming',
   'Hanging out with friends',
   'Going to the gym',
-];
+]
+
+function createHTMLList(arr) {
+  // your code goes in here
+  const list = document.querySelector("#list")
+  list.innerHTML = "<ul>" + myHobbies.map(function (hobby) {
+    return '<li>' + hobby + '</li>';
+  }).join('') + "<ul>"
+};
+
+createHTMLList(myHobbies)
+
