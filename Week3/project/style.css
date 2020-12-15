@@ -1,0 +1,40 @@
+body {
+    background: #e4f1fa;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+#app {
+    height: 700px;
+    width: 600px;
+    margin: 100px auto;
+    background: #a7b8e7;
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-rows: repeat(5, 300px);
+    justify-items: center;
+  }
+
+h1 {
+    background: #1F030C;
+    color: white;
+    align-self: center;
+    margin: 0 30px;
+    padding: 20px;
+} 
+
+button {
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background: #138ead;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+  }
+
+#total {
+    font-size: 30px;
+    margin-top: 5px;
+    text-align: center;
+ }

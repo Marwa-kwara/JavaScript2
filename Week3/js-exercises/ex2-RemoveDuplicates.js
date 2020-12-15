@@ -10,12 +10,17 @@ does not return anything but removes any duplicate elements from the array.
    
  */
 
+const { check } = require("prettier");
+
 
 // WRITE YOUR FUNCTION HERE
 
 const letters = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c', 'b'];
+function removeDuplicateElements() {
+  const uniqueLetters = letters.filter((item, index) => letters.indexOf(item) === index);
+console.log(uniqueLetters);
+  if (checkSolution(letters)) {
+    console.log("Hooray!")
+  }
+}
 
-removeDuplicates(letters);
-
-if (letters === ['a', 'b', 'c', 'd', 'e', 'f'])
-  console.log("Hooray!")
