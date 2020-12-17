@@ -10,8 +10,6 @@ does not return anything but removes any duplicate elements from the array.
    
  */
 
-const { check } = require("prettier");
-
 
 // WRITE YOUR FUNCTION HERE
 
