@@ -20,5 +20,5 @@ console.log(uniqueLetters);
   if (checkSolution(letters)) {
     console.log("Hooray!")
   }
-}
+};
 
